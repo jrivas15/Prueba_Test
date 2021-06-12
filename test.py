@@ -5,10 +5,10 @@ G = {"a": ["c"],
      "e": ["c", "b"],
      "f": []
      }
-def determinarAristas (entrada, grafo):
-    aristas = len(grafo[entrada])
-    return aristas
 
 if __name__ == "__main__":
-    print(determinarAristas("c", G))
+    keys = list(G.keys())
+    values = list(G.values())
+    for i in keys:
+        print(f"Entrada: {i} y G Salida: {len(G[i])} ")
 
